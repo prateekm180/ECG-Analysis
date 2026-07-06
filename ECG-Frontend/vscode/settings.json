@@ -1,0 +1,10 @@
+{
+  // Tailwind CSS uses at-rules like @config, @apply, @theme, and @tailwind
+  // that aren't part of standard CSS. VS Code's built-in CSS validator
+  // doesn't know about them and flags them as "Unknown at rule" warnings —
+  // this is a false positive and doesn't affect the actual build (PostCSS
+  // + @tailwindcss/postcss handles them correctly). Silencing it here.
+  "css.lint.unknownAtRules": "ignore",
+  "scss.lint.unknownAtRules": "ignore",
+  "less.lint.unknownAtRules": "ignore"
+}
